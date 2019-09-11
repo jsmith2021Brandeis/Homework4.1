@@ -19,6 +19,7 @@ def callback(msg):
     #publish the direction as a string
     #pub.publish(dirName)
 
+
     #et the method to talk to the action
     client = actionlib.SimpleActionClient('move', moveAction)
 

@@ -3,13 +3,14 @@
 print "running action server"
 import rospy
 import actionlib
+<<<<<<< HEAD
 from prrexamples.msg import moveAction, moveGoal, moveResult
-
 # Action Request Comes in
 def do_move(goal):
     result = moveResult()
     print "I have been requested to do action"
     return 
+
 
 # Declare that we are a node
 rospy.init_node('smith_action_server')
