@@ -7,7 +7,7 @@ import rospy
 from std_msgs.msg import String
 print "running console node"
 # Make this into a ROS node.
-rospy.init_node('smith_console_node')
+rospy.init_node('console_node')
 
 # Prepare to publish topic `direction`
 pub = rospy.Publisher('demo/command', String, queue_size=10)

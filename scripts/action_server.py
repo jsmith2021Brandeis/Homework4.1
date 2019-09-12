@@ -3,8 +3,7 @@
 print "running action server"
 import rospy
 import actionlib
-<<<<<<< HEAD
-from prrexamples.msg import moveAction, moveGoal, moveResult
+
 # Action Request Comes in
 def do_move(goal):
     result = moveResult()
@@ -13,7 +12,7 @@ def do_move(goal):
 
 
 # Declare that we are a node
-rospy.init_node('smith_action_server')
+rospy.init_node('action_server')
 
 # Declare that this node will handle actions
 # When action requests come in, call do_timer method

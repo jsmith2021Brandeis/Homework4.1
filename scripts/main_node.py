@@ -4,17 +4,23 @@
 #subscribes to command from console
 import rospy
 from std_msgs.msg import String
+from rossummary.srv import fakeNLP
 import sys
 print "running main node"
 # define function is called each time the message is published (by some other node)
 def callback(msg):
     
     print (msg.data)
+    #wait for service to start up
     rospy.wait_for_service('fake_nlp')
 
     # Get the method (service proxy)
-    turn = rospy.ServiceProxy('fake_nlp', WordCount)
-    print turn
+    parse_command= rospy.ServiceProxy('fake_nlp', fakeNLP)
+    turnAmount=parse_command("turn 55")
+
+    print "should be 55"
+    print turnAmount.toTurn
+
 
     #publish the direction as a string
     #pub.publish(dirName)
@@ -37,7 +43,7 @@ def callback(msg):
     client.send_goal(goal)
 
 # Make this into a ROS node.
-rospy.init_node('smith_main_node')
+rospy.init_node('main_node')
 sub = rospy.Subscriber('demo/command', String, callback)
 rospy.spin()
 

@@ -9,10 +9,11 @@ print "starting simulator"
 def callback(msg):
     #publish simulated odemeter data
     pub.publish(msg.data+1)
+    print msg
     sleep(1)
 
 # Make this into a ROS node.
-rospy.init_node('smith_sim')
+rospy.init_node('sim')
 
 sub = rospy.Subscriber('/cmd_vel', Int32, callback)
 
