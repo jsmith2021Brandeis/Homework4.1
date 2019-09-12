@@ -1,0 +1,5 @@
+Bash File Streamlining
+4.1Script:Removed all hardcodeding and Saved code by iterating over python files and
+    executing every one in a new window. 
+README.MD:added links I used for reference and to show my work
+deleted .sh files:no longer necessary with my streamlined 4.1Script bash file
