@@ -12,7 +12,7 @@
 
 
 #### To  run bash script easily, add this to bashrc file
-
+	Type: code ~/.bashrc
 	#add Path so I don't have to type Bash and start at that directory Jacob Smith 		9/11/2019
 	curDir='/home/robotics/Documents/Homework4.2/catkin_ws/src/rossummary/scripts'`
 	`export PATH="$PATH:"$curDir`
