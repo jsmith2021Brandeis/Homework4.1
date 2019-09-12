@@ -47,26 +47,23 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
    FILES
-   Complex.msg
-   Detector.msg )
+ )
 
 ## Generate services in the 'srv' folder
 add_service_files(
    FILES
-   WordCount.srv
+   fake_nlp.srv
  )
 
 ## Generate actions in the 'action' folder
  add_action_files(
 #   DIRECTORY action
-   FILES Timer.action
+   FILES Move.action
  )
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
    DEPENDENCIES
-   actionlib_msgs
-   std_msgs
  )
 
 ################################################
