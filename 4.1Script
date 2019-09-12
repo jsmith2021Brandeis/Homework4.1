@@ -3,40 +3,17 @@
 #commands from Course Page Chapter 3
 #I created this set of bash scripts so I don't have to open and close 3 linux terminals manually
 # and enter the commands
-
-#remove all files starting with Smith4.2 from current directory to copy later
- \rm -rf smith4.2*
-
-#go to scripts directory
-cd ~/catkin_ws/src/prrexamples/scripts
-#run topics
+#links in readme
 
 #launch roscore in other terminal and wait for it to start up
-gnome-terminal -- /bin/sh -c 'roscore; sleep 10'
+gnome-terminal -- /bin/sh -c 'roscore'
 sleep 2
 
-#launch publiser in other terminal
-#source https://unix.stackexchange.com/questions/373186/open-gnome-terminal-window-and-execute-2-commands
-
-#launch action
-gnome-terminal -- /bin/sh -c 'runServ.sh'
-gnome-terminal -- /bin/sh -c 'runMain.sh'
-
-#launch console
-gnome-terminal -- /bin/sh -c 'runCons.sh'
-
-# launch fake nlp
-gnome-terminal -- /bin/sh -c 'runFNLP.sh'
-
-# launch robot simulation node
-gnome-terminal -- /bin/sh -c 'runSim.sh'
-
+#loop through every python file in program
+for f in *.py; do 
+    #give file permissions and run it
+    gnome-terminal -- /bin/sh -c 'chmod +x '$f';python '$f
+done
 #close terminal windows after X  seconds
-sleep 60
-#https://stackoverflow.com/questions/160924/how-can-i-kill-a-process-by-name-instead-of-pid
-#https://stackoverflow.com/questions/160924/how-can-i-kill-a-process-by-name-instead-of-pid
+sleep 30
 pkill gnome-terminal-
-
-#copy python scripts that start with my name to this folder as a backup
-#https://stackoverflow.com/questions/14371039/copy-all-files-in-a-directory-with-a-particular-string-in-the-filename-to-differ
-cp -v smith4.2* /home/robotics/bin
