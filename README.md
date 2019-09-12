@@ -11,7 +11,6 @@
 **-Jacob Smith** jsmith2021@brandeis.edu
 
 
-
 #### To  run bash script easily, add this to bashrc file
 
 	#add Path so I don't have to type Bash and start at that directory Jacob Smith 		9/11/2019
@@ -19,7 +18,6 @@
 	`export PATH="$PATH:"$curDir`
 	`cd $curDir`
 #### Useful Links
-
 Looping in bash script :
 
 ​	https://www.cyberciti.biz/faq/bash-loop-over-file/ 
@@ -39,9 +37,7 @@ Copy files from one location to another:
 
 ​	https://stackoverflow.com/questions/14371039/copy-all-files-in-a-directory-with-a-particular-string-in-the-filename-to-differ
 
-
  Avoid typing bash to run a script
-
  	https://stackabuse.com/how-to-permanently-set-path-in-linux/
 
 Start bash to run in correct directory
@@ -66,4 +62,6 @@ Set window of new terminal
 
 Set default path
 
-​	https://askubuntu.com/questions/332062/setting-default-path-when-opening-a-terminal-session
+	https://askubuntu.com/questions/332062/setting-default-path-when-opening-a-terminal-session
+=======
+ 	https://stackabuse.com/how-to-permanently-set-path-in-linux
