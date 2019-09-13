@@ -7,8 +7,8 @@ import rospy
 #import actionLib
 from std_msgs.msg import String
 import actionlib
-from prrexamples.srv import fakeNLP
-from prrexamples.msg import MoveAction, MoveGoal, MoveResult
+from rossummary.srv import fakeNLP
+from rossummary.msg import MoveAction, MoveGoal, MoveResult
 import sys
 print "RUNNING MAIN NODE"
 # define function is called each time the message is published (by some other node)

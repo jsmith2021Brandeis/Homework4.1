@@ -6,7 +6,7 @@
 print "RUNNING ACTION SERVER"
 import rospy
 import actionlib
-from prrexamples.msg import MoveAction, MoveGoal, MoveResult
+from rossummary.msg import MoveAction, MoveGoal, MoveResult
 
 # Action Request Comes in
 def do_move(goal):
