@@ -3,25 +3,30 @@
 
 ### Contains my homework for the course and serves as a backup
 
-### Homework 4.2
+### Homework 4.2 ROSSUMMARY
 
 #### 	**Overview**
-​	Has two nodes, a service and an action to allow the user to move the robot
 
-**-Jacob Smith** jsmith2021@brandeis.edu
+###### 		4.1Script: A bash file that automatically launches ROSCORE, gazebo, and all of my python classes
 
+###### 		action_server.py: This ROS Action receives a request to turn the robot by a certain amount and 	 				publishes a Twist message to move the robot.
 
-#### To  run bash script easily, add this to bashrc file
-	Type: code ~/.bashrc
-	#add Path so I don't have to type Bash and start at that directory Jacob Smith 		9/11/2019
-	curDir='/home/robotics/Documents/Homework4.2/catkin_ws/src/rossummary/scripts'`
-	`export PATH="$PATH:"$curDir`
-	`cd $curDir`
-#### To launch gazebo:, see link below
+###### 		console_node.py: This ROS node prompts the user to enter console input and publishes the 			input to a topic
 
-​	`roslaunch turtlebot3_gazebo turtlebot3_world.launch`
+###### 		fake_nlp.py: This ROS service parses user entered commands into an amount to turn the robot. 				If the command does not translate to an amount to turn, it prints an error message and 					turns 0
 
-https://www.youtube.com/watch?v=9U6GDonGFHw
+###### 		main_node.py: This ROS node handles communication with the other ROS objects and with 					gazebo. It subscribes to the console node, passes the command to the fake_nlp service, 					and requests the action server to move the robot
+
+### Other Code
+
+​	The only code I used not included here are these convenience lines which let me create a shortcut to run 	the 4.1Script file
+
+	Type: code ~/.bashrc#	
+	add Path so I don't have to type Bash and start at that directory Jacob Smith 		9/11/2019`
+	`curDir='/home/robotics/Documents/Homework4.2/catkin_ws/src/rossummary/scripts'export PATH="$PATH:"$curDircd $curDir``
+### Note
+
+​		I used the class prrexamples as a template for the package and node/service/action layout of this 			assignment. I also searched the internet for solutions to errors and problems I was having, see links 			below.
 
 #### Useful Links
 
@@ -87,3 +92,5 @@ Set Robot Type in Gazebo NathanelGandi, set MODEL to burger instead of whatthey 
 Launch Gazbo 20:21 in video:
 
 ​	https://www.youtube.com/watch?v=9U6GDonGFHw
+
+**-Jacob Smith** jsmith2021@brandeis.edu
