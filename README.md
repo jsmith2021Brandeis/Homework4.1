@@ -17,7 +17,14 @@
 	curDir='/home/robotics/Documents/Homework4.2/catkin_ws/src/rossummary/scripts'`
 	`export PATH="$PATH:"$curDir`
 	`cd $curDir`
+#### To launch gazebo:, see link below
+
+​	`roslaunch turtlebot3_gazebo turtlebot3_world.launch`
+
+https://www.youtube.com/watch?v=9U6GDonGFHw
+
 #### Useful Links
+
 Looping in bash script :
 
 ​	https://www.cyberciti.biz/faq/bash-loop-over-file/ 
