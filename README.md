@@ -64,7 +64,7 @@ Set window of new terminal
 
 	https://askubuntu.com/questions/332062/setting-default-path-when-opening-a-terminal-session
 	 	https://stackabuse.com/how-to-permanently-set-path-in-linux
-	 	
+
 Check if String represents an integer
 
 ​	https://stackoverflow.com/questions/1265665/how-can-i-check-if-a-string-represents-an-int-without-using-try-except
@@ -72,3 +72,11 @@ Check if String represents an integer
 Convert String to int
 
 ​	https://guide.freecodecamp.org/python/how-to-convert-strings-into-integers-in-python/
+
+Set Robot Type in Gazebo NathanelGandi, set MODEL to burger instead of whatthey where doing
+
+​	https://github.com/turtlebot/turtlebot/issues/236
+
+Launch Gazbo 20:21 in video:
+
+​	https://www.youtube.com/watch?v=9U6GDonGFHw
