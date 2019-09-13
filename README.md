@@ -17,6 +17,8 @@
 
 ###### 		main_node.py: This ROS node handles communication with the other ROS objects and with 					gazebo. It subscribes to the console node, passes the command to the fake_nlp service, 					and requests the action server to move the robot
 
+![Demonstration of ROS objects](demo.gif)
+
 ### Other Code
 
 ​	The only code I used not included here are these convenience lines which let me create a shortcut to run 	the 4.1Script file
