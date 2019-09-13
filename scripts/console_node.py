@@ -1,11 +1,11 @@
 #! /usr/bin/3.2/env python
-#Jacob Smith 9/9/2019 Cosi 119a Homework 3.2
+#Jacob Smith 9/13/2019 Cosi 119a Homework 4.2
 # used topic_subscriber as template
 #reads user input from console
 
 import rospy
 from std_msgs.msg import String
-print "running console node"
+print "RUNNIGN CONSOLE NODE"
 # Make this into a ROS node.
 rospy.init_node('console_node')
 

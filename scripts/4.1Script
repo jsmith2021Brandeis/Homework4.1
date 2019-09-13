@@ -16,8 +16,7 @@ for f in *.py; do
     count=`expr "$count" + "200"`
     #give file permissions and run python file
     gnome-terminal --geometry 73x31+$count+0 -- /bin/sh -c 'chmod +x '$f';python '$f
-    sleep 5
 done
 #close terminal windows after X  seconds
-sleep 20
+sleep 27
 pkill gnome-terminal-

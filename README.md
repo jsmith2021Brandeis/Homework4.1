@@ -60,8 +60,15 @@ Set window of new terminal
 
 ​	https://unix.stackexchange.com/questions/48984/how-can-i-set-the-position-that-terminal-opens-at
 
-Set default path
+`Set default path`
 
 	https://askubuntu.com/questions/332062/setting-default-path-when-opening-a-terminal-session
-=======
- 	https://stackabuse.com/how-to-permanently-set-path-in-linux
+	 	https://stackabuse.com/how-to-permanently-set-path-in-linux
+	 	
+Check if String represents an integer
+
+​	https://stackoverflow.com/questions/1265665/how-can-i-check-if-a-string-represents-an-int-without-using-try-except
+
+Convert String to int
+
+​	https://guide.freecodecamp.org/python/how-to-convert-strings-into-integers-in-python/

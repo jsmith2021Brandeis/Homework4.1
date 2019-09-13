@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(rossummary)
+project(prrexamples)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -47,12 +47,12 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
    FILES
- )
+  )
 
 ## Generate services in the 'srv' folder
 add_service_files(
    FILES
-   fake_nlp.srv
+   fakeNLP.srv
  )
 
 ## Generate actions in the 'action' folder
@@ -64,6 +64,8 @@ add_service_files(
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
    DEPENDENCIES
+   actionlib_msgs
+   std_msgs
  )
 
 ################################################

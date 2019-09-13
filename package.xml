@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>rossummary</name>
+  <name>prrexamples</name>
   <version>0.0.0</version>
   <description>The prrexamples package</description>
 
@@ -58,6 +58,7 @@
   <exec_depend>message_runtime</exec_depend>
   <exec_depend>message_generation</exec_depend>
   <exec_depend>actionlib_msgs</exec_depend>
+  <depend>actionLib</depend>
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
