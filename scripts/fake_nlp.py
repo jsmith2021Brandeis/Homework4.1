@@ -5,7 +5,7 @@
 print "RUNNING FAKE NLP"
 import rospy
 from std_msgs.msg import Int32,String
-from rossummary.srv import fakeNLP #, fakeNLPResponce #error on import
+from rossummary.srv import fakeNLP, fakeNLPResponse #error on import
 
 #when user asks for a process message, pattern match it to a word and space,
 # and return number if pattern matches
