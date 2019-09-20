@@ -30,7 +30,7 @@
 
 ​		I used the class prrexamples as a template for the package and node/service/action layout of this 			assignment. I also searched the internet for solutions to errors and problems I was having, see links 			below.
 
-#### Useful Links
+#### Useful Links for Original ROSSUMMARY Homework
 
 Looping in bash script :
 
@@ -94,5 +94,47 @@ Set Robot Type in Gazebo NathanelGandi, set MODEL to burger instead of whatthey 
 Launch Gazbo 20:21 in video:
 
 ​	https://www.youtube.com/watch?v=9U6GDonGFHw
+
+### Links for Automatic Robot Log in
+
+shutdown ros https://answers.ros.org/question/242098/how-to-shutdown-all-nodes/
+
+publish cmd_vel https://answers.ros.org/question/218818/how-to-publish-a-ros-msg-on-linux-terminal/
+
+escape characters in bash https://linuxhint.com/bash_escape_quotes/
+
+expect command to automate ssh login, I didn't get to work https://www.linuxquestions.org/questions/linux-general-1/automatically-passing-an-answer-to-a-command%27s-prompt-918926/
+
+ssh pass aut log in https://www.cyberciti.biz/faq/noninteractive-shell-script-ssh-password-provider/
+
+agreeing to command line liscence https://askubuntu.com/questions/78235/how-do-i-accept-an-agreement-in-terminal
+
+sending remote command to terminal (Edward Torvalds Answer) https://unix.stackexchange.com/questions/261531/how-to-send-output-from-one-terminal-to-another-without-making-any-new-pipe-or-f
+
+get terminal number https://unix.stackexchange.com/questions/261531/how-to-send-output-from-one-terminal-to-another-without-making-any-new-pipe-or-f
+
+store command output in variable https://askubuntu.com/questions/323162/how-do-i-assign-the-output-of-a-command-to-a-variable
+
+parse a string https://unix.stackexchange.com/questions/312280/split-string-by-delimiter-and-get-n-th-element
+
+send terminals to each other https://unix.stackexchange.com/questions/135108/sending-message-from-one-terminal-user-to-another-user/135111
+
+
+
+## Homework ROS ROOMBA
+
+#### **Overview**
+
+###### runRoomba.sh: A bash file that automatically launches ROSCORE, gazebo, and the runRoomba node
+
+runRoomba.py: A python ROS node (based on wander.py) which drives forward if it does not see a ditacen less than the threshold, and turns if it does. This behavior results in a wall avoiding pattern, much like a roomba.
+
+To Do: widen robot's field of vision, have it turn random amount so it doesn't drive in loops, run on real robot, lengthen time until robot gets stuck
+
+​	Demonstration: This is my roomba program running on the gazebo simulator, it gets stuck after the video 	ends.
+
+![Demonstration of my Roomba example](roombaDemo.gif)
+
+
 
 **-Jacob Smith** jsmith2021@brandeis.edu
